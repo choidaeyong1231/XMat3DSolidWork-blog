@@ -3,6 +3,11 @@
 > **C# & OpenTK(OpenGL) 기반의 자체 파라메트릭 3D 솔리드 모델러 및 다축 기구 모션 시뮬레이션 시스템**
 
 <p>
+  <a href="https://choidaeyong1231.github.io/XMat3DSolidWork-blog"><img src="https://komarev.com/ghpvc/?username=choidaeyong1231-xmat3dsolidwork&label=Visitors&color=007acc" alt="Visitors" /></a>
+  <a href="https://github.com/choidaeyong1231/XMat3DSolidWork-blog/issues/new"><img src="https://img.shields.io/badge/Q%26A-GitHub_Issues-brightgreen?logo=github&logoColor=white" alt="Ask Question" /></a>
+</p>
+
+<p>
   <span class="badge badge-tech">C# 7.3</span>
   <span class="badge badge-tech">OpenTK / OpenGL</span>
   <span class="badge badge-tech">WinForms / Krypton Ribbon</span>

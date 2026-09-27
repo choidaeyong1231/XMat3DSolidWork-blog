@@ -15,3 +15,11 @@
 
 * **문의 및 Q&A**
   * [📬 문의 및 Q&A](contact.md)
+
+* **외부 링크**
+  * [GitHub Repository](https://github.com/choidaeyong1231/XMat3DSolidWork-blog)
+
+---
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=choidaeyong1231-xmat3dsolidwork&label=Visitors&color=007acc" alt="Visitors" />
+</div>
