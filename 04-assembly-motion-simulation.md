@@ -100,3 +100,17 @@ private void CollectSubtreeIds(string rootId, List<string> ids, string szSourceP
 ```
 
 이 필터링을 통해 **기하학적 면 참조 관계를 유지하면서도 파트 소속과 모션 매핑을 온전히 보호**하는 안정적인 어셈블리 분리 시스템을 완성했습니다.
+
+---
+
+## 🎬 실제 동작 시연 영상
+
+위에서 설명한 **피처 계열의 새 Part 분리 및 다축 모션 시뮬레이션의 실제 동작 과정**을 [전체 시연 영상 페이지](demo-video.md) 또는 아래 영상에서 직접 확인하실 수 있습니다:
+
+<div align="center">
+  <video width="100%" controls preload="metadata" poster="images/demo_poster.jpg" style="max-height: 460px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
+    <source src="videos/XMat3DSolidWork_demo.mp4" type="video/mp4">
+    이 브라우저는 HTML5 비디오를 지원하지 않습니다.
+  </video>
+  <p><em>💡 Part 계층 분리 및 다축 모션 시뮬레이션 실제 동작 시연 (3분 21초)</em></p>
+</div>

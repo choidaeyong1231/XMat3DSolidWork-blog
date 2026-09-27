@@ -1,5 +1,6 @@
 * **소개**
   * [프로젝트 개요](README.md)
+  * [🎬 데모 시연 영상](demo-video.md)
   * [주요 기능 & UI 살펴보기](features-overview.md)
 
 * **실전 개발기 (Tech Blog)**
