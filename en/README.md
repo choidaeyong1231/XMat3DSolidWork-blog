@@ -105,6 +105,8 @@ Specifically tailored for semiconductor inspection equipment, automated machiner
   * Solving 2D geometric constraints, Work on Face coordinate projections, and snapping
 * **[Part 4: Assembly / Part Hierarchy & Multi-Axis Motion Simulation](en/04-assembly-motion-simulation.md)**
   * Commercial CAD grade part tree hierarchy, motion path lines, servo axis mapping, and jog control
+* **[Part 5: XConfigUtil & Reusable Configuration Architecture for WinForms](en/05-xconfigutil-mvvm-architecture.md)**
+  * Real-time 3-way synchronization across WinForms and WPF MVVM, driving parameter UI costs to zero
 * **[.m3d XML File Format Specification](en/m3d-format-specification.md)**
   * Full schema breakdown for 3D model, sketch constraint, and motion teaching serialization
 * **[Krypton Ribbon UI & Bilingual Architecture](en/ui-architecture.md)**

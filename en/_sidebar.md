@@ -9,6 +9,7 @@
   * [Part 2: OpenTK OpenGL VBO & CSG Pipeline](/en/02-opentk-vbo-rendering.md)
   * [Part 3: 2D Parametric Constraint Solver](/en/03-sketch-constraints-and-workplane.md)
   * [Part 4: Multi-Axis Motion Simulation](/en/04-assembly-motion-simulation.md)
+  * [Part 5: XConfigUtil & Reusable Architecture](/en/05-xconfigutil-mvvm-architecture.md)
 
 * **Architecture & Specs**
   * [.m3d XML Format Spec](/en/m3d-format-specification.md)

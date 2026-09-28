@@ -9,6 +9,7 @@
   * [2편: OpenTK(OpenGL) VBO 고속 렌더링과 CSG 솔리드 파이프라인](02-opentk-vbo-rendering.md)
   * [3편: 2D 파라메트릭 스케치 구속조건 솔버와 면 작업 평면](03-sketch-constraints-and-workplane.md)
   * [4편: Assembly / Part 계층 구조와 다축 기구 모션 시뮬레이션](04-assembly-motion-simulation.md)
+  * [5편: XConfigUtil & Configuration 재사용 아키텍처](05-xconfigutil-mvvm-architecture.md)
 
 * **아키텍처 & 데이터 사양**
   * [.m3d XML 파일 포맷 사양](m3d-format-specification.md)

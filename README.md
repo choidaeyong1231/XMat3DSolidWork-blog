@@ -98,6 +98,8 @@
   * 2D 평면 기하 구속조건 해결 원리, 솔리드 표면 면 위 스케치(Work on Face)와 좌표계 변환
 * **[4편: Assembly / Part 계층 구조와 다축 기구 모션 시뮬레이션](04-assembly-motion-simulation.md)**
   * 상용 솔리드웍스 수준의 부품 계층화, 모션 경로 라인 기반 실시간 서보 구동 및 조그 제어 구현
+* **[5편: WinForms 장비 개발자를 위한 XConfigUtil & Configuration 재사용 아키텍처](05-xconfigutil-mvvm-architecture.md)**
+  * WinForms와 WPF MVVM의 실시간 3자 동기화, 파라미터 UI 개발 비용을 '0'으로 만든 턴키 재사용 청사진
 * **[.m3d XML 파일 포맷 사양](m3d-format-specification.md)**
   * 모델 형상 및 모션 데이터를 저장하는 XML 스키마 상세 구조
 * **[Krypton Ribbon UI & 다국어 아키텍처](ui-architecture.md)**
