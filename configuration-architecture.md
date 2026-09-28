@@ -10,35 +10,7 @@
 
 이를 통해 WinForms 리본 메뉴, WPF 설정 팝업창, OpenTK OpenGL 렌더러가 서로를 직접 참조하지 않고도 실시간으로 완벽하게 상태를 동기화합니다.
 
-```mermaid
-flowchart TD
-    subgraph SSOT ["단일 진실 공급원 (Model)"]
-        CFG["Configuration (IConfiguration)<br/>- Camera: Zoom, Perspective, Projection<br/>- Display: ShowAxes, ShowFrame, Background<br/>- Event: ConfigurationChangedEventHandler"]
-    end
-
-    subgraph UI_WinForms ["WinForms 레이어 (FormMain)"]
-        Ribbon["리본 탭 컨트롤 (Ribbon UI)<br/>- _checkBoxShowAxes, _comboBackground<br/>- ShowSolidConfigurationDialog 호출"]
-    end
-
-    subgraph UI_WPF ["WPF MVVM 레이어 (XConfigUtil)"]
-        CCVM["ConfigurationControlViewModel<br/>(: BaseViewModel)"]
-        CCView["ConfigurationControl.xaml<br/>(WPF 탭/슬라이더 설정 대화상자)"]
-    end
-
-    subgraph Render_OpenTK ["3D 렌더링 엔진 (XMat3DSolidPlotCtrl)"]
-        SubCtrl["XMat3DSolidPlotCtrlSub<br/>- ConfigurationChangedEventHandler 구독"]
-        GL["OpenTK OpenGL VBO 렌더러<br/>- 60FPS 실시간 Invalidate()"]
-    end
-
-    %% 연결 관계
-    Ribbon -- "1. 리본 값 변경" --> CFG
-    CCView <--> CCVM
-    CCVM <--> CFG
-    
-    CFG -- "2. ConfigurationChanged 통지" --> SubCtrl
-    CFG -- "속성 변경 통지" --> CCVM
-    SubCtrl -- "3. VBO 재빌드 & 화면 갱신" --> GL
-```
+![Configuration 실시간 3자 동기화 아키텍처 다이어그램](images/configuration_architecture_kr.svg)
 
 ---
 

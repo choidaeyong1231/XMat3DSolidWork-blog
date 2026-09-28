@@ -10,35 +10,7 @@ A cornerstone of the `XMat3DSolidPlot` and `XMat3DSolidWork` architecture is tha
 
 This allows the WinForms ribbon menu, the WPF modal preferences window, and the OpenTK OpenGL graphics engine to synchronize their states in real-time without direct coupling:
 
-```mermaid
-flowchart TD
-    subgraph SSOT ["Single Source of Truth (Model)"]
-        CFG["Configuration (IConfiguration)<br/>- Camera: Zoom, Perspective, Projection<br/>- Display: ShowAxes, ShowFrame, Background<br/>- Event: ConfigurationChangedEventHandler"]
-    end
-
-    subgraph UI_WinForms ["WinForms Host Layer (FormMain)"]
-        Ribbon["Ribbon Controls (Ribbon UI)<br/>- _checkBoxShowAxes, _comboBackground<br/>- Calls ShowSolidConfigurationDialog"]
-    end
-
-    subgraph UI_WPF ["WPF MVVM Layer (XConfigUtil)"]
-        CCVM["ConfigurationControlViewModel<br/>(: BaseViewModel)"]
-        CCView["ConfigurationControl.xaml<br/>(WPF Tabbed Preferences Dialog)"]
-    end
-
-    subgraph Render_OpenTK ["3D Graphics Engine (XMat3DSolidPlotCtrl)"]
-        SubCtrl["XMat3DSolidPlotCtrlSub<br/>- ConfigurationChangedEventHandler"]
-        GL["OpenTK OpenGL VBO Renderer<br/>- 60 FPS Real-Time Invalidate()"]
-    end
-
-    %% Flow
-    Ribbon -- "1. Mutates Model via Ribbon" --> CFG
-    CCView <--> CCVM
-    CCVM <--> CFG
-    
-    CFG -- "2. Fires ConfigurationChanged" --> SubCtrl
-    CFG -- "Notifies Property Change" --> CCVM
-    SubCtrl -- "3. Rebuilds VBOs & Redraws" --> GL
-```
+![Configuration 3-Way Real-Time Synchronization Architecture Diagram](images/configuration_architecture_en.svg)
 
 ---
 

@@ -35,35 +35,7 @@
 
 `XMat3DSolidPlot`의 가장 뛰어난 설계는 **`Configuration` 객체 하나가 3D 뷰어와 메인 화면 전체의 단일 데이터 소스(Single Source of Truth)로 동작한다는 점**입니다.
 
-```mermaid
-flowchart TD
-    subgraph SSOT ["단일 데이터 소스 (Model)"]
-        CFG["Configuration (IConfiguration)<br/>- Zoom, Perspective, BackgroundColour<br/>- ShowAxes, ShowFrame, ViewProjection 등<br/>- event ConfigurationChanged"]
-    end
-
-    subgraph UI_WinForms ["WinForms 레이어 (FormMain)"]
-        Ribbon["리본 메뉴 체크박스/슬라이더<br/>(_checkBoxShowAxes, _comboBackground 등)"]
-    end
-
-    subgraph UI_WPF ["WPF MVVM 레이어 (XConfigUtil 연동)"]
-        CCVM["ConfigurationControlViewModel<br/>(: BaseViewModel)"]
-        CCView["ConfigurationControl.xaml<br/>(WPF 팝업 설정창)"]
-    end
-
-    subgraph Render_OpenTK ["3D 렌더링 엔진 (XMat3DSolidPlotCtrl)"]
-        SubCtrl["XMat3DSolidPlotCtrlSub<br/>- ConfigurationChangedEventHandler"]
-        VBO["OpenGL VBO / 버퍼 재계산 및 Repaint"]
-    end
-
-    %% 연결 관계
-    Ribbon -- "1. 리본에서 값 변경" --> CFG
-    CCView <--> CCVM
-    CCVM <--> CFG
-    
-    CFG -- "2. ConfigurationChanged 이벤트 발생" --> SubCtrl
-    CFG -- "이벤트 통지" --> CCVM
-    SubCtrl -- "3. VBO 갱신 & Invalidate()" --> VBO
-```
+![Configuration 실시간 3자 동기화 아키텍처 다이어그램](images/configuration_architecture_kr.svg)
 
 ### 실시간 연쇄 반응 흐름
 1. **사용자 조작**: 사용자가 WPF 환경설정 팝업창에서 배경색이나 축 표시를 변경.

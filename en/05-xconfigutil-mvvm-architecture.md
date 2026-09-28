@@ -35,35 +35,7 @@ The key to thriving with MVVM today is **delegating mechanical boilerplate (XAML
 
 The defining architectural achievement of `XMat3DSolidPlot` is that **a single `Configuration` instance acts as the Single Source of Truth** across the entire application ecosystem.
 
-```mermaid
-flowchart TD
-    subgraph SSOT ["Single Source of Truth (Model)"]
-        CFG["Configuration (IConfiguration)<br/>- Zoom, Perspective, BackgroundColour<br/>- ShowAxes, ShowFrame, ViewProjection<br/>- event ConfigurationChanged"]
-    end
-
-    subgraph UI_WinForms ["WinForms Host Layer (FormMain)"]
-        Ribbon["Ribbon Menus / Toggles<br/>(_checkBoxShowAxes, _comboBackground)"]
-    end
-
-    subgraph UI_WPF ["WPF MVVM Layer (XConfigUtil)"]
-        CCVM["ConfigurationControlViewModel<br/>(: BaseViewModel)"]
-        CCView["ConfigurationControl.xaml<br/>(WPF Modal Preferences Dialog)"]
-    end
-
-    subgraph Render_OpenTK ["3D Graphics Engine (XMat3DSolidPlotCtrl)"]
-        SubCtrl["XMat3DSolidPlotCtrlSub<br/>- ConfigurationChangedEventHandler"]
-        VBO["OpenGL VBO / Geometry Rebuild & Repaint"]
-    end
-
-    %% Wiring
-    Ribbon -- "1. Mutates Model via Ribbon" --> CFG
-    CCView <--> CCVM
-    CCVM <--> CFG
-    
-    CFG -- "2. Fires ConfigurationChanged" --> SubCtrl
-    CFG -- "Property Notification" --> CCVM
-    SubCtrl -- "3. Rebuilds VBOs & Invalidate()" --> VBO
-```
+![Configuration 3-Way Real-Time Synchronization Architecture Diagram](images/configuration_architecture_en.svg)
 
 ### Real-Time Cascade Workflow
 1. **User Action**: The operator alters a background color or toggles coordinate frames in the WPF preferences popup.
