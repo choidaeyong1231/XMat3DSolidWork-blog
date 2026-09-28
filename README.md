@@ -33,8 +33,8 @@
     <source src="videos/XMat3DSolidWork_demo.mp4" type="video/mp4">
     이 브라우저는 HTML5 비디오를 지원하지 않습니다.
   </video>
-  <p><em>💡 XMat3DSolidWork 파트 분리 및 다축 모션 시뮬레이션 시연 (3분 21초)</em></p>
-  <p><small><a href="videos/XMat3DSolidWork_demo.mp4" target="_blank">🔗 새 창에서 원본 영상 보기</a> &nbsp;|&nbsp; <a href="#/demo-video">📖 타임라인별 상세 설명 보기</a></small></p>
+  <p><em>💡 XMat3DSolidWork 3D 모델링, 파트 분리 및 다축 모션 시뮬레이션 종합 시연 (38분 36초)</em></p>
+  <p><small><a href="videos/XMat3DSolidWork_demo.mp4" target="_blank">🔗 새 창에서 원본 영상 보기</a> &nbsp;|&nbsp; <a href="#/demo-video">📖 4개 챕터별 상세 설명 보기</a></small></p>
 </div>
 
 ---

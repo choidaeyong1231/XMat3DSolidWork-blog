@@ -112,5 +112,5 @@ private void CollectSubtreeIds(string rootId, List<string> ids, string szSourceP
     <source src="videos/XMat3DSolidWork_demo.mp4" type="video/mp4">
     이 브라우저는 HTML5 비디오를 지원하지 않습니다.
   </video>
-  <p><em>💡 Part 계층 분리 및 다축 모션 시뮬레이션 실제 동작 시연 (3분 21초)</em></p>
+  <p><em>💡 종합 시연 영상 (38분 36초, 35:13부터 파트 분리 및 다축 모션 구동)</em></p>
 </div>
