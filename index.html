@@ -77,13 +77,24 @@
       name: 'XMat3DSolidWork',
       repo: '',
       loadSidebar: true,
+      loadNavbar: true,
+      nameLink: {
+        '/en/': '#/en/',
+        '/': '#/'
+      },
       subMaxLevel: 3,
       auto2top: true,
       search: {
         maxAge: 86400000,
         paths: 'auto',
-        placeholder: '검색어를 입력하세요...',
-        noData: '검색 결과가 없습니다.',
+        placeholder: {
+          '/en/': 'Type to search...',
+          '/': '검색어를 입력하세요...'
+        },
+        noData: {
+          '/en/': 'No Results found.',
+          '/': '검색 결과가 없습니다.'
+        },
         depth: 4
       },
       copyCode: {
