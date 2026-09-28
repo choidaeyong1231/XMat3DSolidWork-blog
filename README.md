@@ -5,6 +5,7 @@
 <p>
   <a href="https://choidaeyong1231.github.io/XMat3DSolidWork-blog"><img src="https://komarev.com/ghpvc/?username=choidaeyong1231-xmat3dsolidwork&label=Visitors&color=007acc" alt="Visitors" /></a>
   <a href="https://github.com/choidaeyong1231/XMat3DSolidWork-blog/issues/new"><img src="https://img.shields.io/badge/Q%26A-GitHub_Issues-brightgreen?logo=github&logoColor=white" alt="Ask Question" /></a>
+  <a href="#/download"><img src="https://img.shields.io/badge/Download-Release_v1.0.0-blue?logo=windows&logoColor=white" alt="Download Release" /></a>
 </p>
 
 <p>
@@ -15,6 +16,11 @@
   <span class="badge badge-feat">CSG Boolean & Chamfer</span>
   <span class="badge badge-feat">Multi-Axis Motion Simulation</span>
 </p>
+
+<div style="background: #f0f7ff; border-left: 4px solid #007acc; padding: 12px 18px; margin: 16px 0; border-radius: 0 6px 6px 0;">
+  <strong>💾 최신 릴리즈 빌드 배포 중:</strong> 별도 설치 없이 바로 실행 가능한 포터블 패키지 및 검사 장비 샘플 모델이 제공됩니다. <br>
+  👉 <a href="#/download" style="font-weight: bold; color: #007acc;">프로그램 다운로드 페이지 바로가기 (ZIP, 약 3.2MB)</a>
+</div>
 
 ---
 
