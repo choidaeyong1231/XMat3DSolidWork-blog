@@ -104,3 +104,5 @@
   * 모델 형상 및 모션 데이터를 저장하는 XML 스키마 상세 구조
 * **[Krypton Ribbon UI & 다국어 아키텍처](ui-architecture.md)**
   * Office 스타일 리본 컨트롤러, 실시간 한/영 리소스 스위칭 및 영속화 아키텍처
+* **[Configuration & XConfigUtil 아키텍처](configuration-architecture.md)**
+  * 단일 진실 공급원(SSOT) 모델 기반의 실시간 3자 동기화와 턴키 컴포넌트 재사용 사양

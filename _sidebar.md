@@ -14,6 +14,7 @@
 * **아키텍처 & 데이터 사양**
   * [.m3d XML 파일 포맷 사양](m3d-format-specification.md)
   * [Krypton Ribbon UI & 다국어 아키텍처](ui-architecture.md)
+  * [Configuration & XConfigUtil 아키텍처](configuration-architecture.md)
 
 * **문의 및 Q&A**
   * [📬 문의 및 Q&A](contact.md)

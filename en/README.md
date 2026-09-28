@@ -111,3 +111,5 @@ Specifically tailored for semiconductor inspection equipment, automated machiner
   * Full schema breakdown for 3D model, sketch constraint, and motion teaching serialization
 * **[Krypton Ribbon UI & Bilingual Architecture](en/ui-architecture.md)**
   * Office-style ribbon controller, runtime resource switching, and persistent user configuration
+* **[Configuration & XConfigUtil Architecture Specification](en/configuration-architecture.md)**
+  * Single Source of Truth model driving real-time 3-way synchronization and turn-key component reusability

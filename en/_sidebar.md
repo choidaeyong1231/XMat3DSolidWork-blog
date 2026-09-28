@@ -14,6 +14,7 @@
 * **Architecture & Specs**
   * [.m3d XML Format Spec](/en/m3d-format-specification.md)
   * [Krypton Ribbon UI Architecture](/en/ui-architecture.md)
+  * [Configuration & XConfigUtil Architecture](/en/configuration-architecture.md)
 
 * **Contact & Support**
   * [📬 Contact & Q&A](/en/contact.md)

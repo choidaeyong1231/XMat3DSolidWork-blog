@@ -68,6 +68,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://choidaeyong1231.github.io/XMat3DSolidWork-blog/#/configuration-architecture</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://choidaeyong1231.github.io/XMat3DSolidWork-blog/#/contact</loc>
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
@@ -138,6 +144,12 @@
   <url>
     <loc>https://choidaeyong1231.github.io/XMat3DSolidWork-blog/#/en/ui-architecture</loc>
     <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://choidaeyong1231.github.io/XMat3DSolidWork-blog/#/en/configuration-architecture</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
